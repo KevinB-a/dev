@@ -13,11 +13,12 @@ elif number2>number and number2>number1 and number2>number3: #compare number2 wi
 else:
     print("le nombre le plus grand est",number3) # if other condition are false display last variable
 
+
 #exercise2 : age condition
 try:
     age=int(input("please enter your age"))
 except ValueError:
-    print("you did not write anything")
+    print("you did not write anything")hide_number=int(input("please enter a number"))
 if age<0:
     print("please enter a real age")
 elif math.sqrt(age).is_integer():
@@ -28,3 +29,16 @@ if age % 2==0:
     print("your age is an even number")
 else:
     print("you age is not a perfect square")
+
+exercise3 : Hide number
+hide_number=int(input("please enter a number"))
+guess_number=int(input("please enter a number"))
+while guess_number!=hide_number :
+    if guess_number<hide_number:
+        print("enter a bigger number")
+        guess_number=int(input("please enter a number"))
+    if guess_number>hide_number:
+        print("enter a little number")
+        guess_number=int(input("please enter a number"))
+pass
+print("you win, you find the hide number")
