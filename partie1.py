@@ -1,6 +1,6 @@
-#exercise1 :the bigger number
 import math
 from math import pi
+#exercise1 :the bigger number
 number=1
 number1=2
 number2=3
@@ -73,9 +73,22 @@ def perimeter_circle():
     print(perimeter)
 area_circle()
 perimeter_circle()
-#exercise8 :
+
+#exercise8 : a pyramid
 n=0
 symbol="*"
 while n!=6:
     print(n*symbol)
     n=n+1
+
+#exercise9 : FIZZ BUZZ
+import math
+number=0
+while number!=100:
+    if (number/3).is_integer() and (number/5).is_integer():
+        print("FIZZBUZZ")
+    if (number/3).is_integer() and not (number/5).is_integer():
+        print("FIZZ")
+    if (number/5).is_integer() and not (number/3).is_integer():
+        print("BUZZ")
+    number=number+1
