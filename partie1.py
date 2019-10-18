@@ -55,3 +55,21 @@ while n!=100:
     n=n+1
     if n % 2==0:
         print(n)
+
+#exercise6 : fill the pool
+def filling(length,width,depth,debit):
+    m3=(length*width*depth)/debit
+    print("you fill the pool in" ,m3,"minutes")
+filling(3,4,2,3)
+
+#exercese7 : area and perimeter of circle
+from math import pi
+r=int(input("please enter ray of the circle in cm"))
+def area_circle():
+    area=round(pi*(r**2),2)
+    print(area)
+def perimeter_circle():
+    perimeter=round(2*pi*r,2)
+    print(perimeter)
+area_circle()
+perimeter_circle()
