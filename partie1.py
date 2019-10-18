@@ -1,5 +1,6 @@
 #exercise1 :the bigger number
 import math
+from math import pi
 number=1
 number1=2
 number2=3
@@ -62,8 +63,7 @@ def filling(length,width,depth,debit):
     print("you fill the pool in" ,m3,"minutes")
 filling(3,4,2,3)
 
-#exercese7 : area and perimeter of circle
-from math import pi
+#exercise7 : area and perimeter of circle
 r=int(input("please enter ray of the circle in cm"))
 def area_circle():
     area=round(pi*(r**2),2)
@@ -73,3 +73,9 @@ def perimeter_circle():
     print(perimeter)
 area_circle()
 perimeter_circle()
+#exercise8 :
+n=0
+symbol="*"
+while n!=6:
+    print(n*symbol)
+    n=n+1
