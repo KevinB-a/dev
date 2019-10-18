@@ -30,7 +30,7 @@ if age % 2==0:
 else:
     print("you age is not a perfect square")
 
-exercise3 : Hide number
+#exercise3 : Hide number
 hide_number=int(input("please enter a number"))
 guess_number=int(input("please enter a number"))
 while guess_number!=hide_number :
@@ -42,3 +42,9 @@ while guess_number!=hide_number :
         guess_number=int(input("please enter a number"))
 pass
 print("you win, you find the hide number")
+
+# exercise4 : number in loop
+n=0
+while n!=100:
+    n=n+1
+    print(n)
