@@ -19,7 +19,7 @@ else:
 try:
     age=int(input("please enter your age"))
 except ValueError:
-    print("you did not write anything")hide_number=int(input("please enter a number"))
+    print("you did not write anything")
 if age<0:
     print("please enter a real age")
 elif math.sqrt(age).is_integer():
@@ -62,7 +62,7 @@ def filling(length,width,depth,debit):
     m3=(length*width*depth)/debit
     print("you fill the pool in" ,m3,"minutes")
 filling(3,4,2,3)
-
+from math import pi
 #exercise7 : area and perimeter of circle
 r=int(input("please enter ray of the circle in cm"))
 def area_circle():
@@ -82,7 +82,6 @@ while n!=6:
     n=n+1
 
 #exercise9 : FIZZ BUZZ
-import math
 number=0
 while number!=100:
     if (number/3).is_integer() and (number/5).is_integer():
