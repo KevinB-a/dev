@@ -37,9 +37,16 @@ print(factorial(5))
 #exercise5 :the dashes count
 text=input("please enter your sentence")
 def replace():
+    """create a function who replace a character by an another one"""
     text1=text.replace("-","\_")
     print(text1)
     if text=="":
         print("you write nothing")
 
 replace()
+#exercise6 : train with the boards
+shopping_list=["tomatoes","apples","strawberry","pinapple","blueberry"]
+print(shopping_list[0])
+print(shopping_list[-1])
+length=int(len(shopping_list)/2)
+print(shopping_list[length])
