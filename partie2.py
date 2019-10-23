@@ -35,18 +35,25 @@ def factorial(n):
 print(factorial(5))
 
 #exercise5 :the dashes count
-text=input("please enter your sentence")
-def replace():
+def replace(text):
     """create a function who replace a character by an another one"""
-    text1=text.replace("-","\_")
-    print(text1)
+    text=text.replace("-","\_")
+    print(text)
     if text=="":
         print("you write nothing")
-
-replace()
+text=input("please enter your sentence")
+replace(text)
 #exercise6 : train with the boards
 shopping_list=["tomatoes","apples","strawberry","pinapple","blueberry"]
 print(shopping_list[0])
 print(shopping_list[-1])
 length=int(len(shopping_list)/2)
 print(shopping_list[length])
+#exercise7 : man's board
+man=[["billet"," kevin"," 27"," 20/12/1991"],["toto"," titi"," 17"," 30/02/2002"],["tata"," tito"," 34"," 01/03/1985"]]
+def infos(man):
+    for i in range(len(man)):
+        for j in range(len(man[i])):
+            print(man[i][j], end='')
+        print()
+infos(man)
