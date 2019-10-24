@@ -63,8 +63,8 @@ print(max(list_of_numbers))
 
 #exercise9 : To Do list
 todolist=[]
-task=""
-while task !="fin":
+task="" """create empty variable for continue in while loop"""
+while task !="fin": """while loop continue until user insert fin """
     task=input("enter a task")
-    todolist.append(task)
-print(todolist)
+    todolist.append(task) """todolist.append() add element in todolist """
+print(todolist) """display elements in todolist """
