@@ -16,15 +16,15 @@ else:
 
 
 #exercise2 : age condition
-try:
+try:                                        """i use a try for create an except """
     age=int(input("please enter your age"))
-except ValueError:
+except ValueError:                          """if user enter something else than an integer an error message is display """
     print("you did not write anything")
 if age<0:
     print("please enter a real age")
-elif math.sqrt(age).is_integer():
-    print("you age is a perfect square")
-if age>= 21:
+elif math.sqrt(age).is_integer():           """sqrt is a math function who calculate square root of a number """
+    print("you age is a perfect square")    """is_integer verify if number is an integer or not if that is the
+if age>= 21:                                   case display true and if not display False"""
     print("you have access ")
 if age % 2==0:
     print("your age is an even number")
@@ -45,31 +45,30 @@ pass
 print("you win, you find the hide number")
 
 # exercise4 : number in loop
-n=0
-while n!=100:
-    n=n+1
+n=0 """initialize n"""
+while n!=100:   """i use while loop """
+    n=n+1       """ don't forget increment if you not put this increment your loop is infinite"""
     print(n)
 
 # exercise5 : number in loop second part
 n=0
 while n!=100:
     n=n+1
-    if n % 2==0:
+    if n % 2==0: """display only even numbers """
         print(n)
 
 #exercise6 : fill the pool
-def filling(length,width,depth,debit):
+def filling(length,width,depth,debit): """create a function filling who calculate the filling time """
     m3=(length*width*depth)/debit
     print("you fill the pool in" ,m3,"minutes")
 filling(3,4,2,3)
-from math import pi
+
 #exercise7 : area and perimeter of circle
 r=int(input("please enter ray of the circle in cm"))
 def area_circle():
-    area=round(pi*(r**2),2)
-    print(area)
+    area=round(pi*(r**2),2)     """create area_circle who display the result of area"""
 def perimeter_circle():
-    perimeter=round(2*pi*r,2)
+    perimeter=round(2*pi*r,2)   """create perimeter_circle who display the result of perimeter """
     print(perimeter)
 area_circle()
 perimeter_circle()
@@ -77,7 +76,7 @@ perimeter_circle()
 #exercise8 : a pyramid
 n=0
 symbol="*"
-while n!=6:
+while n!=6:         """here the while loop permit display every iterations of the loop """
     print(n*symbol)
     n=n+1
 
@@ -86,8 +85,8 @@ number=0
 while number!=100:
     if (number/3).is_integer() and (number/5).is_integer():
         print("FIZZBUZZ")
-    if (number/3).is_integer() and not (number/5).is_integer():
-        print("FIZZ")
+    if (number/3).is_integer() and not (number/5).is_integer(): """he verify if these condition a good,
+        print("FIZZ")                                              if it that case display this message """
     if (number/5).is_integer() and not (number/3).is_integer():
         print("BUZZ")
     number=number+1
