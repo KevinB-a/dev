@@ -52,13 +52,13 @@ print(shopping_list[length])
 #exercise7 : man's board
 man=[["billet"," kevin"," 27"," 20/12/1991"],["toto"," titi"," 17"," 30/02/2002"],["tata"," tito"," 34"," 01/03/1985"]]
 def infos(man): """ display every elements of the lists  """
-    for i in range(len(man)): # the value of i change it begin at 0 until 2 here (3 lists on the list man)
-        for j in range(len(man[i])): #the value of j change it begin at 0 until 3 (every list content 4 elements)
+    for i in range(len(man)): """ the value of i change it begin at 0 until 2 here (3 lists on the list man)"""
+        for j in range(len(man[i])): """the value of j change it begin at 0 until 3 (every list content 4 elements)"""
             print(man[i][j], end='')
         print()
 infos(man)
 #exercise8 : the max of a board
-list_of_numbers=[112,67,987,57,98]
+list_of_numbers=[112,67,193,57,98]
 print(max(list_of_numbers))
 
 #exercise9 : To Do list
