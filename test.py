@@ -10,11 +10,18 @@ def maxi(liste):
             print("you put str and int in the same list")
 liste=[1,3,5,7,9]
 maxi(liste)"""
-liste=["r","didou","jack","mich","coucou",8]
+"""liste=["r","didou","jack","mich","coucou",8]
 for i in range(0,len(liste)):
     if isinstance(liste[i], int) and not isinstance(liste[i],str):
         print(liste[i])
     elif isinstance(liste[i],str) and not isinstance(liste[i], int):
         print(liste[i])
     else:
-        print("you put str and int in the same list")
+        print("you put str and int in the same list")"""
+
+todolist=[]
+task=""
+while task !="fin":
+    task=input("enter a task")
+    todolist.append(task)
+print(todolist)

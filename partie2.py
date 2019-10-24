@@ -60,4 +60,11 @@ infos(man)
 #exercise8 : the max of a board
 list_of_numbers=[112,67,987,57,98]
 print(max(list_of_numbers))
-list=[134,"hello",567,"goodnight"]
+
+#exercise9 : To Do list
+todolist=[]
+task=""
+while task !="fin":
+    task=input("enter a task")
+    todolist.append(task)
+print(todolist)
