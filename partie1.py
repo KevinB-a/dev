@@ -66,7 +66,8 @@ filling(3,4,2,3)
 #exercise7 : area and perimeter of circle
 r=int(input("please enter ray of the circle in cm"))
 def area_circle():
-    area=round(pi*(r**2),2)     """create area_circle who display the result of area"""
+    area=round(pi*(r**2),2)"""create area_circle who display the result of area"""
+    print(area)
 def perimeter_circle():
     perimeter=round(2*pi*r,2)   """create perimeter_circle who display the result of perimeter """
     print(perimeter)
